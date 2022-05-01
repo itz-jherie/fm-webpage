@@ -1,0 +1,21 @@
+.dropdown1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    top: 20px;
+    padding: 7px;
+    border-radius: 7px;
+    display: none;
+}
+.dropdown2 {
+    background-color: blue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    top: 20px;
+    padding: 7px;
+    border-radius: 7px;
+    display: none;
+}
