@@ -17,6 +17,8 @@ p{
 }
 
 .navbar-container {
+    border: 1px solid red;
+    max-height: 90px;
     display: flex;
     width: 100vw;
     justify-content: space-between;
@@ -76,6 +78,7 @@ p{
     font-weight: bold;
 }
 .feature-list {
+    z-index: 2;
     margin-left: -70px;
     margin-top:10px;
     display: none;
