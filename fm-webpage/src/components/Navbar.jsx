@@ -39,7 +39,7 @@ const Navbar = () => {
                </div>
 
                <div className='login-container'>
-                   <button>Login</button>
+                   <button className='button1'>Login</button>
                    <button className='button2'>Register</button>
                </div>
            </div>
