@@ -1,0 +1,59 @@
+*{
+    background-color: white;
+}
+.ham-container {
+    background-color: rgba(0, 0, 0, 0.329);
+    position: absolute;
+    top: 0;
+    bottom: -210px;
+    left: 0;
+    right: 0
+}
+.ham-items{
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    margin-left: 30%;
+    padding: 30px;
+}
+.ham-items div {
+    cursor: pointer;
+}
+ul {
+    margin-top: 5px;
+}
+li{
+    padding: 7px;
+    display: flex;
+}
+li img{
+    
+    margin-right: 10px;
+}
+.close  {
+    color: white;
+    cursor: pointer;
+    margin-left: 90%;
+}
+.ham-items div {
+    padding: 5px
+}
+.ham-items p {
+    padding: 8px 5px;
+    display: block;
+}
+.ham-buttons button{
+    display:block;
+    margin-top: 8px;
+    padding: 7px;
+    width: 100%
+}
+.ham-buttons2{
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.ham-buttons2:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}

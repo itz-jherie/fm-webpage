@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Epilogue);
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;700;800&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +8,7 @@
     text-decoration: none;
     background-color: hsl(0, 0%, 98%);
     font-family: 'Epilogue', sans-serif;
-    font-size: 15px;
+    
     
 }
 p{
@@ -19,7 +19,7 @@ p{
 .navbar-container {
     max-height: 90px;
     display: flex;
-    width: 95vw;
+    width: 95.6vw;
     justify-content: space-between;
     background-color: rgba(0, 0, 255, 0);
     padding: 30px 30px;
@@ -37,8 +37,6 @@ p{
     justify-content: space-between;
     padding: 2px;
 }
-
-  
 
 .login-container {
     display: flex;
@@ -129,5 +127,27 @@ p{
 }
 .company:hover .company-list {
     display: block;
+}
+.menu {
+    display: none;
+}
+/**************Media Queries
+    
+*/
+@media screen and (max-width: 750px ) {
+    .nav-cont2{
+        display: none;
+    }
+    .menu{ 
+        display: flex;
+        align-self: center;
+        cursor: pointer;
+    }
+    .logo{
+        width:20%;
+    }
+
+    
+    
 }
 

@@ -4,7 +4,7 @@ import databiz from '../assets/images/client-databiz.svg'
 import audiophile from '../assets/images/client-audiophile.svg'
 import meet from '../assets/images/client-meet.svg'
 import maker from '../assets/images/client-maker.svg'
-import heroImg from '../assets/images/image-hero-desktop.png'
+
 const Body = () => {
     return (
         <div className="main-container">
@@ -25,8 +25,9 @@ const Body = () => {
                     <img src={maker} alt='maker'/>
                 </div>
             </div>
-            <div className="image">
-                <img src={heroImg} width= '100%' alt='heroimg'/>
+            <div className="image" >
+                <div className="image-container">
+                </div>
             </div>
         </div>
       );
