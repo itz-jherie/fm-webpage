@@ -6,7 +6,7 @@ import calendar from '../assets/images/icon-calendar.svg'
 import reminders from '../assets/images/icon-reminders.svg'
 import planning from '../assets/images/icon-planning.svg'
 import close from '../assets/images/icon-close-menu.svg';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 const Hamburger = (props) => {
