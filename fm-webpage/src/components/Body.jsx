@@ -4,11 +4,16 @@ import databiz from '../assets/images/client-databiz.svg'
 import audiophile from '../assets/images/client-audiophile.svg'
 import meet from '../assets/images/client-meet.svg'
 import maker from '../assets/images/client-maker.svg'
+import { motion } from 'framer-motion';
 
 const Body = () => {
     return (
         <div className="main-container">
-            <div className="hero">
+            <motion.div className="hero"
+                initial={{x: -90}}
+                animate={{x: 0}}
+                transition={{ duration:0.5}}
+            >
                 <p className="large-txt">Make <br/>
                     remote work
                 </p>
@@ -24,11 +29,14 @@ const Body = () => {
                     <img src={meet} alt='meet'/>
                     <img src={maker} alt='maker'/>
                 </div>
-            </div>
-            <div className="image" >
+            </motion.div>
+            <motion.div className="image" 
+                animate={{scale: [0.7, 1.2, 1]}}
+                transition={{ duration: 1.5}}
+            >
                 <div className="image-container">
                 </div>
-            </div>
+            </motion.div>
         </div>
       );
 }

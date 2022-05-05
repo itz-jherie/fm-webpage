@@ -6,7 +6,7 @@ import calendar from '../assets/images/icon-calendar.svg'
 import reminders from '../assets/images/icon-reminders.svg'
 import planning from '../assets/images/icon-planning.svg'
 import close from '../assets/images/icon-close-menu.svg';
-
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 const Hamburger = (props) => {
@@ -20,7 +20,13 @@ const Hamburger = (props) => {
 
     return (  
         <div className="ham-container" onClick={props.onClose}>
-            <div className="ham-items" onClick={e => e.stopPropagation()}>
+            
+            <motion.div className="ham-items" onClick={e => e.stopPropagation()}
+                initial={{x: 120}}
+                animate={{x: 0}}
+                transition={{type: "tween"}}
+                
+            >
                 <p className="close" onClick={props.onClose}><img src={close} alt="closebutton"/></p>
                 <div onClick={ ()=>setShowFeatures(!showFeatures)} >Features <img src={ down } alt='feature-img'></img>{showFeatures ? 
                     <div >
@@ -51,7 +57,8 @@ const Hamburger = (props) => {
                         <button >Login</button>
                         <button className="ham-buttons2">Register</button>
                     </div>
-                </div>
+                </motion.div> 
+                
         </div>
     );
 }

@@ -39,14 +39,20 @@ li img{
     padding: 5px
 }
 .ham-items p {
+    cursor: pointer;
     padding: 8px 5px;
     display: block;
+}
+.ham-buttons button:hover {
+    font-weight: bold;
 }
 .ham-buttons button{
     display:block;
     margin-top: 8px;
     padding: 7px;
-    width: 100%
+    width: 100%;
+    cursor: pointer;
+    
 }
 .ham-buttons2{
     border: 1px solid black;
