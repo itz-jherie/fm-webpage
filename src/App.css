@@ -40,7 +40,7 @@ p{
 
 .login-container {
     display: flex;
-    width: 20%;
+    width: 15%;
 }
 .login-container button {
     align-self: center;
@@ -53,7 +53,7 @@ p{
     font-weight: bold;
 }
 .button1{
-    margin-left: -50px;
+    margin-left: -30px;
     margin-right: 15px
 }
 .button2 {
